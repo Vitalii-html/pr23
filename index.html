@@ -1,29 +1,56 @@
 <!doctype html>
-<html>
+<html lang="uk">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Мій сайт</title>
   <style>
     body {
       background-color: #007BFF;
       color: white;
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 50px;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
+
     .content {
       background-color: rgba(255, 255, 255, 0.1);
-      display: inline-block;
-      padding: 30px;
+      padding: 30px 20px;
       border-radius: 15px;
+      max-width: 500px;
+      width: 90%;
+      text-align: center;
+      box-sizing: border-box;
     }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
     a {
       color: #ffdd57;
       text-decoration: none;
       font-weight: bold;
+      display: inline-block;
+      margin: 10px;
+      transition: transform 0.3s ease, color 0.3s ease;
     }
+
+    a:hover {
+      transform: scale(1.05);
+      color: #ffffff;
+    }
+
     img {
+      width: 100%;
+      max-width: 200px;
       border-radius: 10px;
       margin-top: 20px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
     }
   </style>
 </head>
@@ -32,12 +59,11 @@
     <h1>Головко Віталій</h1>
     <p>Дата народження: 14.05.2009</p>
     <p>Місце народження: м. Нетішин</p>
-    <img src="photo.jpg" width="200" alt="Фото"><br><br>
-
+    <img src="photo.jpg" alt="Фото">
     <h2>Меню</h2>
     <p>
-      <a href="Myfamily.html">Моя родина</a> |
-      <a href="Mystudy.html">Моє навчання</a> |
+      <a href="Myfamily.html">Моя родина</a>
+      <a href="Mystudy.html">Моє навчання</a>
       <a href="Myhobby.html">Мої уподобання</a>
     </p>
   </div>
