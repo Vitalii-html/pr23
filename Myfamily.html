@@ -1,29 +1,53 @@
 <!doctype html>
-<html>
+<html lang="uk">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Моя родина</title>
   <style>
     body {
       background-color: #007BFF;
       color: white;
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 50px;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
+
     .content {
       background-color: rgba(255, 255, 255, 0.1);
-      display: inline-block;
-      padding: 30px;
+      padding: 30px 20px;
       border-radius: 15px;
+      max-width: 500px;
+      width: 90%;
+      text-align: center;
+      box-sizing: border-box;
     }
+
+    ul {
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
     a {
+      display: inline-block;
+      margin-top: 20px;
       color: #ffdd57;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s ease, transform 0.3s ease;
     }
-    ul {
-      text-align: left;
-      display: inline-block;
+
+    a:hover {
+      color: #ffffff;
+      transform: scale(1.05);
     }
   </style>
 </head>
@@ -31,10 +55,9 @@
   <div class="content">
     <h1>Моя родина</h1>
     <ul>
-      <li>Мама — Продавчиня ТОВ "Полісся-Продукт"</li>
-      <li>Тато — Військовий</li>
+      <li>Мама — продавчиня ТОВ "Полісся-Продукт"</li>
+      <li>Тато — військовий</li>
     </ul>
-    <br>
     <a href="index.html">На головну</a>
   </div>
 </body>
