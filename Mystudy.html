@@ -15,6 +15,8 @@
       display: inline-block;
       padding: 30px;
       border-radius: 15px;
+      max-width: 100%;
+      box-sizing: border-box;
     }
     a {
       color: #ffdd57;
@@ -27,11 +29,43 @@
     }
     table {
       border-collapse: collapse;
-      width: 60%;
+      width: 100%;
+      max-width: 800px;
     }
     th, td {
       border: 1px solid white;
       padding: 8px;
+    }
+
+    /* Медіа-запити для мобільних пристроїв */
+    @media (max-width: 768px) {
+      .content {
+        padding: 20px;
+      }
+      table {
+        width: 90%;
+      }
+      th, td {
+        padding: 6px;
+      }
+      ol {
+        padding-left: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5em;
+      }
+      .content {
+        padding: 15px;
+      }
+      table {
+        width: 100%;
+      }
+      th, td {
+        padding: 5px;
+      }
     }
   </style>
 </head>
@@ -47,20 +81,20 @@
       <tr><th>Предмет</th><th>Оцінка</th></tr>
       <tr><td>Українська мова</td><td>8</td></tr>
       <tr><td>Українська література</td><td>7</td></tr>
-	  <tr><td>Зарубіжна література</td><td>8</td></td>
-	  <tr><td>Іноземна мова</td><td>7</td></td>
-	  <tr><td>Історія України</td><td>5</td></td>
-	  <tr><td>Всесвітня історія</td><td>-</td></td>
-	  <tr><td>Основи ек-ї теор.</td><td>7</td></td>
-	  <tr><td>Математика</td><td>6</td></td>
-	  <tr><td>Фізика і астрономія</td><td>8</td></td>
-	  <tr><td>Хімія</td><td>5</td></td>
-	  <tr><td>Біологія і екологія</td><td>7</td></td>
-	  <tr><td>Фізична культура</td><td>7</td></td>
-	  <tr><td>Захист України</td><td>8</td></td>
-	  <tr><td>Інформатика</td><td>7</td></td>
-	  <tr><td>Культурологія</td><td>-</td></td>
-	  <tr><td>Основи філософських знань</td><td>-</td></td>
+      <tr><td>Зарубіжна література</td><td>8</td></tr>
+      <tr><td>Іноземна мова</td><td>7</td></tr>
+      <tr><td>Історія України</td><td>5</td></tr>
+      <tr><td>Всесвітня історія</td><td>-</td></tr>
+      <tr><td>Основи ек-ї теор.</td><td>7</td></tr>
+      <tr><td>Математика</td><td>6</td></tr>
+      <tr><td>Фізика і астрономія</td><td>8</td></tr>
+      <tr><td>Хімія</td><td>5</td></tr>
+      <tr><td>Біологія і екологія</td><td>7</td></tr>
+      <tr><td>Фізична культура</td><td>7</td></tr>
+      <tr><td>Захист України</td><td>8</td></tr>
+      <tr><td>Інформатика</td><td>7</td></tr>
+      <tr><td>Культурологія</td><td>-</td></tr>
+      <tr><td>Основи філософських знань</td><td>-</td></tr>
     </table>
     <br>
     <a href="index.html">На головну</a>
